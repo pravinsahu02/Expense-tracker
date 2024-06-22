@@ -1,13 +1,77 @@
 body {
+  background-color: #f0f0f0; /* Light grey background for the entire screen */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font for the entire document */
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.expense-tracker {
+  width: 600px;
+  padding: 20px;
+  background-color: #ffffe0; /* Light yellow background to mimic notepad paper */
+  border: 1px solid #000; /* Black border */
+  font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow to lift it off the background */
+}
+
+h1 {
+  text-align: center;
+  color: #000; /* Black text color */
+  font-size: 24px; /* Slightly larger font size */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #000; /* Black border for inputs */
+  background-color: #fff; /* White background */
+  color: #000; /* Black text color */
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  color: #000; /* Black text color */
+  background-color: #d3d3d3; /* Light grey background */
+  border: 1px solid #000; /* Black border */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a9a9a9; /* Darker grey on hover */
+}
+
+.expenses-list {
+  margin-top: 20px;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff; /* White background */
+  border: 1px solid #000; /* Black border */
+  margin-bottom: 10px; /* Space between items */
+}
+
+.expense-item button {
+  background-color: #f08080; /* Light red background */
+  color: #000; /* Black text color */
+}
+
+.expense-item button:hover {
+  background-color: #dc143c; /* Crimson on hover */
+  color: #fff; /* White text color on hover */
 }
